@@ -6,7 +6,7 @@
  * @author Jay Trees <github.jay@grandel.anonaddy.me>
  */
 
-namespace grandel;
+namespace Grandel;
 
 class IncludeDirectory
 {

@@ -3,6 +3,11 @@
     "description": "Automatically include all files in a given directory.",
     "type": "library",
     "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Grandel\\IncludeDirectory\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Jay Trees",
