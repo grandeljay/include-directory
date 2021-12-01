@@ -1,17 +1,16 @@
 {
     "name": "grandel/include-directory",
     "description": "Automatically include all files in a given directory.",
-	"keywords": ["include","require"],
-	"homepage": "https://github.com/grandeljay/include-directory",
-	"authors": [
-		{
-			"name": "Jay Trees",
-            "email": "github.jay@grandel.anonaddy.me",
-            "homepage": "https://github.com/grandeljay",
-            "role": "Developer"
-		}
-	],
+    "type": "library",
+    "license": "AGPL-3",
+    "authors": [
+        {
+            "name": "Jay Trees",
+            "email": "github.jay@grandel.anonaddy.me"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
-        "php": ">=7.4"
-    }
+		"php": ">=7.4"
+	}
 }
