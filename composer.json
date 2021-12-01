@@ -9,7 +9,7 @@
             "email": "github.jay@grandel.anonaddy.me"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
 		"php": ">=7.4"
 	}
