@@ -19,11 +19,24 @@ class IncludeDirectory
      */
     public function __construct(string $directoryToInclude)
     {
+        self::includeDirectory($directoryToInclude);
+    }
+
+    private static function includeDirectory(string $directoryToInclude)
+    {
         foreach (scandir($directoryToInclude) as $filename) {
+            if ($filename === '.' || $filename === '..') {
+                continue;
+            }
+
             $filepath = str_replace('\\', '/', $directoryToInclude . '/' . $filename);
 
             if (is_file($filepath)) {
                 require $filepath;
+            }
+
+            if (is_dir($filepath)) {
+                self::includeDirectory($filepath);
             }
         }
     }
