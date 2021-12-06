@@ -13,5 +13,5 @@ composer require grandel/include-directory
 ```php
 require 'vendor/autoload.php';
 
-$include = new Grandel\IncludeDirectory( __DIR__ . '/path/to/directory' );
+$include = new Grandel\IncludeDirectory(__DIR__ . '/path/to/directory');
 ```
